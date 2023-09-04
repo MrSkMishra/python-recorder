@@ -8,9 +8,9 @@ width = GetSystemMetrics(0)
 height = GetSystemMetrics(1)
 dim = (width,height)
 f = cv2.VideoWriter_fourcc(*"XVID")
-output = cv2.VideoWriter("test.mp4",f,30.0,dim)
+output = cv2.VideoWriter("test3.mp4",f,30.0,dim)
 now_start_time = time.time()
-dur =  80 + 10
+dur =  140 + 10
 end_time = now_start_time + dur
 while True:
     image = pyautogui.screenshot()
